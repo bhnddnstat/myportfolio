@@ -484,6 +484,9 @@ article { display: none; }
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
+.testimonials-text p {
+    text-align: justify;
+}
 
 /*MODAL CONTAINER*/
 
@@ -592,6 +595,9 @@ article { display: none; }
     font-size: var(--fs6);
     font-weight: var(--fw300);
     line-height: 1.6;
+}
+.modal-text p {
+    text-align: justify;
 }
 
 /*CLIENTS*/
