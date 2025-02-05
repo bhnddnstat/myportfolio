@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Profile</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="https://i.postimg.cc/9fqYVvxh/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="avatarku.png" type="image/x-icon">
 </head>
 <body>
     <main>
@@ -74,7 +74,7 @@
                         <div class="contact-info">
                             <p class="contact-title">Location</p>
 
-                            <address>Jln. Yos Sudarso, Sebatik</address>
+                            <address>Jln. Yos Sudarso Sebatik</address>
                         </div>
                     </li>
                 </ul>
@@ -747,6 +747,44 @@
                 </section>
             </article>
         </div>
+
+        <div>
+            <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12 comp-grid">
+                    <div>
+                        <button class="music-button" id="music-button">
+                            <i id="music-icon" class="fas fa-music"></i>
+                        </button>
+                    </div>
+                    <audio id="musicAudio" src="fullhouse.mp3" loop></audio>
+                    <script>
+                        var link = document.createElement('link');
+                        link.rel = 'stylesheet';
+                        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css';
+                        document.head.appendChild(link);
+                        
+                        document.getElementById('music-button').onclick = function() {
+                            var audio = document.getElementById('musicAudio');
+                            var icon = document.getElementById('music-icon');
+                            if (audio.paused) {
+                                audio.play();
+                                icon.classList.remove("fa-music");
+                                icon.classList.add("fa-pause");
+                            } else {
+                                audio.pause();
+                                icon.classList.remove("fa-pause");
+                                icon.classList.add("fa-music");
+                            }
+                        };
+                    </script>
+                </div>
+            </div>
+        </div>
+        
+        </div>
+        
+
     </main>
 
     <script src="main.js"></script>
