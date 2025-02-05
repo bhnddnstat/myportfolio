@@ -753,7 +753,7 @@
             <div class="row">
                 <div class="col-md-12 comp-grid">
                     <div>
-                        <button class="music-button" id="music-button">
+                        <button class="music-buttons" id="music-button">
                             <i id="music-icon" class="fas fa-music"></i>
                         </button>
                     </div>
@@ -767,14 +767,19 @@
                         document.getElementById('music-button').onclick = function() {
                             var audio = document.getElementById('musicAudio');
                             var icon = document.getElementById('music-icon');
+                            var tombol = document.getElementById('music-button');
                             if (audio.paused) {
                                 audio.play();
                                 icon.classList.remove("fa-music");
                                 icon.classList.add("fa-pause");
+                                tombol.classList.remove("music-button");
+                                tombol.classList.add("music-buttons");
                             } else {
                                 audio.pause();
                                 icon.classList.remove("fa-pause");
                                 icon.classList.add("fa-music");
+                                tombol.classList.remove("music-buttons");
+                                tombol.classList.add("music-button");
                             }
                         };
                     </script>
