@@ -275,7 +275,7 @@ article { display: none; }
         position: absolute;
         inset: 1px;
         border-radius: inherit;
-        background: var(--bg-gradient-jet);
+        background: var(--bg-gradient-yellow2);
         transition: var(--transition1);
         z-index: -1;
     }
